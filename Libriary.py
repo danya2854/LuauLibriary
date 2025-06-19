@@ -41,3 +41,6 @@ def warn(text):
 def error(text):
     """Halts thread execution and throws an error."""
     print("\033[91m[Error] "+ text)
+def loadstring(text):
+    """Returns the provided code as a function that can be executed."""
+    return exec(str(text))
